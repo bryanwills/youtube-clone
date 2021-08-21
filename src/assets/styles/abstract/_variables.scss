@@ -1,0 +1,27 @@
+// Colors
+// - Main colors
+$clr-primary: #ff0000;
+$clr-dark-900: #17171e;
+$clr-dark-800: #2c2c32;
+$clr-dark-700: #2e2e34;
+$clr-gray-500: #747478;
+$clr-gray-400: #828285;
+$clr-gray-icon: #747478;
+$clr-gray-text: #8b8b8e;
+$clr-gray-active: #c2c2c2;
+$clr-light: #ffffff;
+
+// - Specific colors
+$body-bg: $clr-dark-900;
+$body-fg: $clr-light;
+$select-bg: $clr-gray-500;
+$select-fg: $clr-light;
+
+// Typography
+$def-font-size: 16px;
+$def-font-weight: normal;
+
+// Sizes
+// - Border radius
+$radius-sm: 14px;
+$radius-md: 22px;

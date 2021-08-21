@@ -1,0 +1,24 @@
+$logo-w: 116px;
+$logo-h: 25px;
+
+.logo {
+  @include flex-center;
+  @include def-transition;
+  width: $logo-w;
+  height: $logo-h;
+
+  &:active {
+    opacity: 0.8;
+  }
+
+  &__img {
+    width: $logo-w;
+    height: $logo-h;
+    display: inline-block;
+  }
+
+  // Modifications
+  &--header {
+    margin-right: 60px;
+  }
+}

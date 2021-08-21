@@ -1,0 +1,23 @@
+.misc {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+
+  &-icons {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+
+    button {
+      @include def-transition;
+
+      &:active {
+        opacity: 0.4;
+      }
+
+      &:not(:last-child) {
+        margin-right: 50px;
+      }
+    }
+  }
+}
