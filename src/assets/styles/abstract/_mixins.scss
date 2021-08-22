@@ -7,3 +7,38 @@
 @mixin def-transition {
   transition: all 200ms ease;
 }
+
+@mixin sidebar-link {
+  display: flex;
+  align-items: center;
+
+  &__icon {
+    @include flex-center;
+    height: 24px;
+    width: 24px;
+    color: $clr-gray-icon;
+  }
+
+  &__text {
+    padding-bottom: 4px;
+    margin-left: 8px;
+    color: $clr-gray-text;
+  }
+
+  & > * {
+    @include def-transition;
+  }
+
+  &:hover > * {
+    color: $clr-primary;
+  }
+
+  &:active > * {
+    opacity: 0.7;
+  }
+
+  // Modifications
+  &--active > * {
+    color: $clr-primary;
+  }
+}

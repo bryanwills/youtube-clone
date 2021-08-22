@@ -12,12 +12,26 @@
   color: $select-fg;
 }
 
-*:focus {
-  outline: none !important;
+// Scrollbar
+* {
+  scrollbar-width: auto;
+  scrollbar-color: $clr-gray-400 $clr-dark-900;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+
+    &-track {
+      background: $clr-dark-900;
+    }
+
+    &-thumb {
+      background: $clr-gray-400;
+    }
+  }
 }
 
-#root {
-  min-height: 100vh;
+*:focus {
+  outline: none !important;
 }
 
 body {

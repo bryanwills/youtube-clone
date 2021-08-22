@@ -1,0 +1,50 @@
+.sidebar {
+  overflow-y: scroll;
+  max-width: 240px;
+  padding: 26px 40px 40px 30px;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &:hover {
+    scrollbar-width: thin;
+
+    &::-webkit-scrollbar {
+      display: block;
+      width: 3px;
+    }
+  }
+
+  &-nav {
+    margin-bottom: 60px;
+
+    &-list {
+      list-style: none;
+
+      &:first-child {
+        margin-bottom: 60px;
+      }
+
+      &-item {
+        &:not(:last-child) {
+          margin-bottom: 24px;
+        }
+
+        &-link {
+          @include sidebar-link;
+        }
+      }
+    }
+  }
+
+  .sidebar-link {
+    @include sidebar-link;
+
+    // Modifications
+    &--show-more {
+      margin-top: 24px;
+    }
+  }
+}

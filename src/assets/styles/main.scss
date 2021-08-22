@@ -6,10 +6,15 @@
 @import './base/normalize.scss';
 @import './base/base.scss';
 // Components
-@import './components/menu-btn.scss';
-@import './components/logo.scss';
-@import './components/search.scss';
-@import './components/icon-btn.scss';
-@import './components/notifications-btn.scss';
-@import './components/misc.scss';
-@import './components/header.scss';
+// - Atoms
+@import './components/atoms/menu-btn.scss';
+@import './components/atoms/logo.scss';
+@import './components/atoms/icon-btn.scss';
+@import './components/atoms/notifications-btn.scss';
+@import './components/atoms/search.scss';
+// - Molecules
+@import './components/molecules/misc.scss';
+@import './components/molecules/subs.scss';
+// - Organisms
+@import './components/organisms/header.scss';
+@import './components/organisms/sidebar.scss';
