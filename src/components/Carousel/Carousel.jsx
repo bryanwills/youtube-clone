@@ -7,6 +7,7 @@ import Video from './Video';
 function Carousel({
   channelImage,
   channelName,
+  isChannel,
   isRecommended,
   subsNumber,
   videos,
@@ -17,16 +18,18 @@ function Carousel({
     <section className="carousel">
       <header className="carousel-header">
         <section className="carousel-header-items">
-          <Link className="carousel-header-items-link" to="/channel">
-            {channelImage && (
+          {isChannel ? (
+            <Link className="carousel-header-items-link" to="/channel">
               <img
                 className="carousel-header__image"
                 src={channelImage}
                 alt=""
               />
-            )}
+              <h2 className="carousel-header__name">{channelName}</h2>
+            </Link>
+          ) : (
             <h2 className="carousel-header__name">{channelName}</h2>
-          </Link>
+          )}
 
           {isRecommended && (
             <p className="carousel-header__subtitle">
@@ -63,6 +66,7 @@ function Carousel({
 Carousel.defaultProps = {
   channelImage: '',
   channelName: '',
+  isChannel: true,
   isRecommended: false,
   subsNumber: 0,
   videos: [],

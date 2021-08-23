@@ -33,6 +33,7 @@ function Feed() {
       <Carousel
         channelName="Recommended"
         videos={videos}
+        isChannel={false}
         videoWidth={540}
         videoHeight={250}
       />

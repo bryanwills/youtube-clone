@@ -7,9 +7,7 @@ import Sidebar from './components/Sidebar/Sidebar';
 function App() {
   useEffect(() => {
     const headerHeight = document.querySelector('.header').offsetHeight;
-    const sidebarEl = document.querySelector('.sidebar');
     const contentEl = document.querySelector('.content');
-    sidebarEl.style.maxHeight = `calc(100vh - ${headerHeight}px)`;
     contentEl.style.maxHeight = `calc(100vh - ${headerHeight}px)`;
   }, []);
 
