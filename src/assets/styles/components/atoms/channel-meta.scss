@@ -1,0 +1,21 @@
+.channel-meta {
+  @include flex-align-center;
+
+  &__img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 14px;
+  }
+
+  &-text {
+    &__name {
+      font-size: 26px;
+    }
+
+    &__subs {
+      font-size: 13px;
+      color: $clr-gray-text;
+    }
+  }
+}

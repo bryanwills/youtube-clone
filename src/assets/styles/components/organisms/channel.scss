@@ -1,0 +1,39 @@
+.channel {
+  width: 100%;
+  padding: 26px 70px 70px 0;
+
+  &-container {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+
+  &-header {
+    &__banner {
+      width: 100%;
+      max-height: 280px;
+      border-radius: $radius-sm;
+      margin-bottom: 30px;
+    }
+
+    &-meta {
+      @include flex-center-between;
+
+      &-items {
+        @include flex-align-center;
+
+        &__bell {
+          @include def-transition;
+          margin-right: 20px;
+
+          &:active {
+            opacity: 0.4;
+          }
+
+          &__icon {
+            color: $clr-light;
+          }
+        }
+      }
+    }
+  }
+}
