@@ -34,6 +34,11 @@
   outline: none !important;
 }
 
+#root {
+  overflow: hidden;
+  max-height: 100vh;
+}
+
 body {
   font-size: $def-font-size;
   font-weight: $def-font-weight;

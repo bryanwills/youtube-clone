@@ -1,0 +1,13 @@
+.subscribe-btn {
+  @include flex-center;
+  min-width: 165px;
+  padding: 10px 20px;
+  border-radius: $radius-md;
+  background-color: $clr-primary;
+  color: $clr-light;
+
+  // Modifications
+  &--subbed {
+    background-color: $clr-gray-400;
+  }
+}

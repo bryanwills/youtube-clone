@@ -7,14 +7,20 @@
 @import './base/base.scss';
 // Components
 // - Atoms
-@import './components/atoms/menu-btn.scss';
-@import './components/atoms/logo.scss';
+@import './components/atoms/carousel-arrows.scss';
 @import './components/atoms/icon-btn.scss';
+@import './components/atoms/logo.scss';
+@import './components/atoms/menu-btn.scss';
 @import './components/atoms/notifications-btn.scss';
 @import './components/atoms/search.scss';
+@import './components/atoms/subscribe-btn.scss';
+@import './components/atoms/video.scss';
 // - Molecules
+@import './components/molecules/carousel.scss';
 @import './components/molecules/misc.scss';
 @import './components/molecules/subs.scss';
 // - Organisms
 @import './components/organisms/header.scss';
 @import './components/organisms/sidebar.scss';
+@import './components/organisms/feed.scss';
+@import './components/organisms/content.scss';

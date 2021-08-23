@@ -1,7 +1,8 @@
 .sidebar {
   overflow-y: scroll;
-  max-width: 240px;
+  min-width: 240px;
   padding: 26px 40px 40px 30px;
+  margin-right: 32px;
   scrollbar-width: none;
 
   &::-webkit-scrollbar {

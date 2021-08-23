@@ -10,8 +10,7 @@ function NavItem({ icon, text, routeTo }) {
         className="sidebar-nav-list-item-link"
         activeClassName="sidebar-nav-list-item-link--active"
         to={routeTo}
-        exact
-      >
+        exact>
         <Icon className="sidebar-nav-list-item-link__icon" />
         <span className="sidebar-nav-list-item-link__text">{text}</span>
       </NavLink>

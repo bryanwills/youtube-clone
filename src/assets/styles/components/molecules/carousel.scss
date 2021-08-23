@@ -1,0 +1,48 @@
+.carousel {
+  &-header {
+    @include flex-center-between;
+    max-width: 78vw;
+    margin-bottom: 28px;
+
+    &-items {
+      @include flex-align-center;
+      &-link {
+        @include flex-align-center;
+      }
+    }
+
+    &__image {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 20px;
+    }
+
+    &__name {
+      font-size: 26px;
+      color: $clr-light;
+    }
+
+    &__subtitle {
+      align-self: flex-end;
+      margin: 0 0 12px 20px;
+      color: $clr-gray-text;
+    }
+  }
+
+  &-videos {
+    &-list {
+      display: flex;
+      gap: 40px;
+      list-style: none;
+
+      & > * {
+        width: 100%;
+      }
+    }
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 50px;
+  }
+}

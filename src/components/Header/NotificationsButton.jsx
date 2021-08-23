@@ -2,7 +2,7 @@ import { ReactComponent as NotificationsIcon } from '../../assets/icons/notifica
 
 function NotificationsButton({ quantity }) {
   return (
-    <button className="notifications-button">
+    <button className="notifications-button" type="button">
       <NotificationsIcon className="notifications-button__icon" />
       {quantity > 0 && (
         <span className="notifications-button__quantity">{quantity}</span>

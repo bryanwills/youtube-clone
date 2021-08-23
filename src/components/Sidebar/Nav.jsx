@@ -30,7 +30,7 @@ function Nav() {
         <NavItem routeTo="/games" icon={icons.Games} text="Games" />
       </ul>
 
-      <button className="sidebar-link sidebar-link--show-more">
+      <button className="sidebar-link sidebar-link--show-more" type="button">
         <span className="sidebar-link__icon">
           <ChevronDown />
         </span>

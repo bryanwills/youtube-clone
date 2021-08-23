@@ -1,11 +1,9 @@
 .misc {
-  display: flex;
-  align-items: center;
+  @include flex-align-center;
   margin-left: auto;
 
   &-icons {
-    display: flex;
-    align-items: center;
+    @include flex-align-center;
     margin-right: 40px;
 
     button {

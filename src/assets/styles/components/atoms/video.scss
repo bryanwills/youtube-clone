@@ -1,0 +1,14 @@
+.carousel-videos-list-item {
+  &__link {
+    &__img {
+      border-radius: $radius-sm;
+      margin-bottom: 10px;
+    }
+
+    &__title {
+      font-weight: bold;
+      text-transform: capitalize;
+      color: $clr-light;
+    }
+  }
+}

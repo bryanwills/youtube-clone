@@ -4,6 +4,17 @@
   justify-content: center;
 }
 
+@mixin flex-center-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin flex-align-center {
+  display: flex;
+  align-items: center;
+}
+
 @mixin def-transition {
   transition: all 200ms ease;
 }
