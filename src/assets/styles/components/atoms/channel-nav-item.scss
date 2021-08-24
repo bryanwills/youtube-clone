@@ -1,0 +1,35 @@
+.channel-nav-item {
+  &__link {
+    @include def-transition;
+    position: relative;
+    font-size: 18px;
+    color: $clr-light;
+
+    &::after {
+      @include def-transition;
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: inline-block;
+      width: 50%;
+      height: 2px;
+      border-radius: 5px;
+      background-color: $clr-primary;
+      visibility: hidden;
+      opacity: 0;
+    }
+
+    // Modifications
+    &--active {
+      color: $clr-primary;
+
+      &::after {
+        width: 110%;
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+}

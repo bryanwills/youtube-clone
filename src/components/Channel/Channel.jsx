@@ -1,4 +1,5 @@
 import ChannelHeader from './ChannelHeader';
+import ChannelBody from './ChannelBody';
 import banner from '../../assets/images/banner.png';
 import avatars from '../common/avatars';
 
@@ -15,6 +16,7 @@ function Channel() {
     <section className="channel">
       <div className="channel-container">
         <ChannelHeader props={channel_data} />
+        <ChannelBody />
       </div>
     </section>
   );

@@ -1,0 +1,25 @@
+.channel-nav {
+  @include flex-align-center;
+
+  &-list {
+    @include flex-align-center;
+    margin-right: 70px;
+
+    & li:not(:last-child) {
+      margin-right: 70px;
+    }
+  }
+
+  &__btn {
+    @include flex-center;
+    @include def-transition;
+
+    &:active {
+      opacity: 0.4;
+    }
+
+    &__icon {
+      color: $clr-light;
+    }
+  }
+}
