@@ -1,5 +1,5 @@
-import icons from '../common/icons';
 import NavItem from './NavItem';
+import icons from '../common/icons';
 
 function Nav() {
   const ChevronDown = icons.ChevronDown;

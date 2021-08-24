@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import VideoPlayer from '../common/VideoPlayer';
 import convert from '../common/convert';
 
@@ -16,7 +17,11 @@ function ChannelPlayer() {
 
       <div className="channel-player-text">
         <div>
-          <h4 className="channel-player-text__title">{player_data.title}</h4>
+          <h2 className="channel-player-text__title">
+            <Link className="channel-player-text__title__link" to="/video/2">
+              {player_data.title}
+            </Link>
+          </h2>
           <p className="channel-player-text__description">
             {player_data.description}
           </p>

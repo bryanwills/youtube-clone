@@ -20,13 +20,15 @@
 @import './components/atoms/video-player.scss';
 // - Molecules
 @import './components/molecules/carousel.scss';
+@import './components/molecules/channel-body.scss';
 @import './components/molecules/channel-nav.scss';
+@import './components/molecules/channel-pinned.scss';
 @import './components/molecules/channel-player.scss';
 @import './components/molecules/misc.scss';
 @import './components/molecules/subs.scss';
 // - Organisms
 @import './components/organisms/header.scss';
+@import './components/organisms/content.scss';
 @import './components/organisms/sidebar.scss';
 @import './components/organisms/feed.scss';
 @import './components/organisms/channel.scss';
-@import './components/organisms/content.scss';

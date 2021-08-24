@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
-import icons from '../common/icons';
 import Nav from './Nav';
 import SubsList from './SubsList';
+import icons from '../common/icons';
 
 function Sidebar() {
   const SettingsIcon = icons.Settings;

@@ -12,12 +12,27 @@
       margin-bottom: 10px;
       font-size: 26px;
       line-height: 32px;
+
+      &__link {
+        color: $clr-light;
+      }
     }
 
     &__description {
       max-width: 58ch;
       line-height: 22px;
       color: $clr-gray-description;
+    }
+
+    @media only screen and (max-width: 1500px) {
+      &__title {
+        max-width: 24ch;
+      }
+
+      &__description {
+        max-width: 40ch;
+        font-size: 15px;
+      }
     }
 
     &__meta {
