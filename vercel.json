@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    { "source": "/author", "destination": "https://github.com/thelissimus" },
+    { "source": "/view-source", "destination": "https://github.com/thelissimus/youtube-clone" }
+  ],
+  "github": {
+    "silent": true
+  }
+}
