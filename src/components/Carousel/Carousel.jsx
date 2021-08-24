@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import SubscribeButton from '../common/SubscribeButton';
 import CarouselArrows from './CarouselArrows';
-import Video from './Video';
+import CarouselVideo from './CarouselVideo';
 
 // TODO: Refactor props structure
 function Carousel({
@@ -48,7 +48,7 @@ function Carousel({
         <ul className="carousel-videos-list">
           {videos.length > 0 &&
             videos.map((vid) => (
-              <Video
+              <CarouselVideo
                 key={vid.id}
                 title={vid.title}
                 image={vid.url}

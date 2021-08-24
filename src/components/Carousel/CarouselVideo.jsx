@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-function Video({ title, image, alt, imgWidth, imgHeight }) {
+function CarouselVideo({ title, image, alt, imgWidth, imgHeight }) {
   return (
     <li className="carousel-videos-list-item">
       <Link className="carousel-videos-list-item__link" to="/video/2">
@@ -17,7 +17,7 @@ function Video({ title, image, alt, imgWidth, imgHeight }) {
   );
 }
 
-Video.defaultProps = {
+CarouselVideo.defaultProps = {
   title: '',
   image: '',
   alt: '',
@@ -25,4 +25,4 @@ Video.defaultProps = {
   imgHeight: 150,
 };
 
-export default Video;
+export default CarouselVideo;

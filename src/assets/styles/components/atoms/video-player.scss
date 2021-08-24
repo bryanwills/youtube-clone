@@ -1,0 +1,9 @@
+.video-player {
+  border: none;
+  border-radius: $radius-sm;
+
+  // Modifications
+  &--channel {
+    margin-right: 32px;
+  }
+}

@@ -1,5 +1,5 @@
 import ChannelNavItem from './ChannelNavItem';
-import icons from '../../common/icons';
+import icons from '../common/icons';
 
 function ChannelNav() {
   const SearchIcon = icons.Search;

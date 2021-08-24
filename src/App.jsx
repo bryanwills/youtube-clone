@@ -23,14 +23,7 @@ function App() {
   useEffect(() => {
     fetch(fetch_data.url)
       .then((response) => response.json())
-      .then((data) =>
-        setVideos(
-          data.splice(
-            fetch_data.limit,
-            data.length - (data.length - fetch_data.limit)
-          )
-        )
-      );
+      .then((data) => setVideos(data.splice(1, fetch_data.limit)));
   }, [fetch_data.limit, fetch_data.url]);
 
   return (

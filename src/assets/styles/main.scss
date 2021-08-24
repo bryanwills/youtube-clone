@@ -8,6 +8,7 @@
 // Components
 // - Atoms
 @import './components/atoms/carousel-arrows.scss';
+@import './components/atoms/carousel-video.scss';
 @import './components/atoms/channel-meta.scss';
 @import './components/atoms/channel-nav-item.scss';
 @import './components/atoms/icon-btn.scss';
@@ -16,10 +17,11 @@
 @import './components/atoms/notifications-btn.scss';
 @import './components/atoms/search.scss';
 @import './components/atoms/subscribe-btn.scss';
-@import './components/atoms/video.scss';
+@import './components/atoms/video-player.scss';
 // - Molecules
 @import './components/molecules/carousel.scss';
 @import './components/molecules/channel-nav.scss';
+@import './components/molecules/channel-player.scss';
 @import './components/molecules/misc.scss';
 @import './components/molecules/subs.scss';
 // - Organisms

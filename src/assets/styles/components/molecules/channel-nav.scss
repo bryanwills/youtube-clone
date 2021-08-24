@@ -1,5 +1,6 @@
 .channel-nav {
   @include flex-align-center;
+  margin-bottom: 50px;
 
   &-list {
     @include flex-align-center;
