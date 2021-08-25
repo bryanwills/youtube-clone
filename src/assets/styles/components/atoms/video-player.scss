@@ -6,4 +6,11 @@
   &--channel {
     margin-right: 32px;
   }
+
+  &--big {
+    min-width: 600px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
 }

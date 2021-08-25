@@ -1,0 +1,46 @@
+.video-menu {
+  @include flex-align-center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  &-more {
+    &__btn {
+      @include flex-center;
+      @include def-transition;
+      width: 28px;
+      height: 28px;
+      margin-left: 40px;
+
+      &:active {
+        @include def-active;
+      }
+
+      &__icon {
+        color: $clr-light;
+      }
+    }
+  }
+
+  &__button {
+    @include flex-center-between;
+    @include def-transition;
+    padding: 10px 20px;
+    border-radius: $radius-md;
+    background-color: $clr-dark-700;
+    color: $clr-light;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+
+    &:active {
+      @include def-active;
+    }
+
+    &__icon {
+      margin-right: 8px;
+      color: $clr-gray-400;
+    }
+  }
+}

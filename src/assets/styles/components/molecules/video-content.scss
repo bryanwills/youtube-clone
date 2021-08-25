@@ -1,0 +1,24 @@
+.video-content {
+  width: 100%;
+  margin-right: 40px;
+
+  &-header {
+    padding-bottom: 15px;
+    border-bottom: 1px solid $clr-gray-500;
+
+    &-meta {
+      position: relative;
+      margin-top: 20px;
+
+      &__title {
+        margin: 0 0 14px 0;
+        font-size: 36px;
+      }
+
+      &__views {
+        font-size: 20px;
+        color: $clr-gray-300;
+      }
+    }
+  }
+}

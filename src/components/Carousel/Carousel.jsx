@@ -9,13 +9,15 @@ function Carousel({
   channelName,
   isChannel,
   isRecommended,
+  needArrows,
   subsNumber,
   videos,
   videoWidth,
   videoHeight,
+  className,
 }) {
   return (
-    <section className="carousel">
+    <section className={`carousel ${className}`}>
       <header className="carousel-header">
         <section className="carousel-header-items">
           {isChannel ? (
@@ -40,7 +42,9 @@ function Carousel({
 
         <section className="carousel-header-items">
           {isRecommended && <SubscribeButton subsNumber={subsNumber} />}
-          <CarouselArrows divClassName="carousel-arrows--feed" />
+          {needArrows && (
+            <CarouselArrows divClassName="carousel-arrows--feed" />
+          )}
         </section>
       </header>
 
@@ -68,10 +72,12 @@ Carousel.defaultProps = {
   channelName: '',
   isChannel: true,
   isRecommended: false,
+  needArrows: true,
   subsNumber: 0,
   videos: [],
   videoWidth: 250,
   videoHeight: 150,
+  className: '',
 };
 
 export default Carousel;

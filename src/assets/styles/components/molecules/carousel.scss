@@ -44,4 +44,11 @@
   &:not(:last-child) {
     margin-bottom: 50px;
   }
+
+  // Modifications
+  &--vertical {
+    .carousel-videos-list {
+      flex-direction: column;
+    }
+  }
 }
