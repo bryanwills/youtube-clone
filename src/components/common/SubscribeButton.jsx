@@ -12,6 +12,7 @@ function SubscribeButton({ subsNumber }) {
     <button
       className={`subscribe-btn ${subbed ? 'subscribe-btn--subbed' : ''}`}
       type="button"
+      aria-label="subscribe to the channel"
       onClick={handleClick}>
       {subbed ? 'Subscribed' : 'Subscribe'} {convert(subsNumber)}
     </button>

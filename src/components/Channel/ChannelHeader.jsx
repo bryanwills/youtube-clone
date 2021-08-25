@@ -24,7 +24,10 @@ function ChannelHeader({ props }) {
         </div>
 
         <div className="channel-header-meta-items">
-          <button className="channel-header-meta-items__bell">
+          <button
+            className="channel-header-meta-items__bell"
+            type="button"
+            aria-label="setup channel notifications">
             <BellIcon className="channel-header-meta-items__bell__icon" />
           </button>
           <SubscribeButton subsNumber={props.subs_num} />

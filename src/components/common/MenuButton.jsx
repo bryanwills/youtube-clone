@@ -5,6 +5,7 @@ function MenuButton({ buttonClass, clickHandler }) {
     <button
       className={`menu-btn ${buttonClass}`}
       type="button"
+      aria-label="open menu"
       onClick={clickHandler}>
       <MenuIcon className="menu-btn__icon" />
     </button>

@@ -10,7 +10,10 @@ function VideoMenu({ likes, dislikes }) {
       <VideoMenuButton icon={icons.Dislike} statsNum={dislikes} />
       <VideoMenuButton icon={icons.Share} text="Share" />
 
-      <button className="video-menu-more__btn" type="button">
+      <button
+        className="video-menu-more__btn"
+        type="button"
+        aria-label="more options">
         <MoreIcon className="video-menu-more__btn__icon" />
       </button>
     </div>

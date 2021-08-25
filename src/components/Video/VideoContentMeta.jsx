@@ -12,7 +12,7 @@ function VideoContentMeta() {
   };
 
   return (
-    <div className="video-content-header-meta">
+    <section className="video-content-header-meta">
       <div className="video-content-header-meta-item">
         <h1 className="video-content-header-meta__title">{video_data.title}</h1>
         <span className="video-content-header-meta__views">
@@ -22,7 +22,7 @@ function VideoContentMeta() {
       </div>
 
       <VideoMenu likes={video_data.likes} dislikes={video_data.dislikes} />
-    </div>
+    </section>
   );
 }
 

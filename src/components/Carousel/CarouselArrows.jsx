@@ -9,12 +9,14 @@ function CarouselArrows({ handleClickLeft, handleClickRight, divClassName }) {
       <button
         className="carousel-arrows__btn carousel-arrows__btn--left"
         type="button"
+        aria-label="move videos left"
         onClick={handleClickLeft}>
         <ChevronLeft className="carousel-arrows__btn__icon" />
       </button>
       <button
         className="carousel-arrows__btn carousel-arrows__btn--right"
         type="button"
+        aria-label="move videos right"
         onClick={handleClickRight}>
         <ChevronRight className="carousel-arrows__btn__icon" />
       </button>

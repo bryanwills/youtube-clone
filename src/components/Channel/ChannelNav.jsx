@@ -15,7 +15,10 @@ function ChannelNav() {
         <ChannelNavItem routeTo="/channel/about" text="About" />
       </ul>
 
-      <button className="channel-nav__btn" type="button">
+      <button
+        className="channel-nav__btn"
+        type="button"
+        aria-label="show search input">
         <SearchIcon className="channel-nav__btn__icon" />
       </button>
     </nav>
