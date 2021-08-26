@@ -1,5 +1,5 @@
 import SubsItem from './SubsItem';
-import avatars from '../common/avatars';
+import avatars from '../../store/avatars';
 
 function SubsList() {
   return (

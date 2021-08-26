@@ -1,5 +1,5 @@
 import ChannelPinnedItem from './ChannelPinnedItem';
-import avatars from '../common/avatars';
+import avatars from '../../store/avatars';
 
 function ChannelPinned() {
   return (

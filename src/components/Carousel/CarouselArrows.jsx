@@ -1,4 +1,4 @@
-import icons from '../common/icons';
+import icons from '../../store/icons';
 
 function CarouselArrows({ handleClickLeft, handleClickRight, divClassName }) {
   const ChevronLeft = icons.ChevronLeft;

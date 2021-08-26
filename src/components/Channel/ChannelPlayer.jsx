@@ -1,6 +1,6 @@
 import { lazy } from 'react';
 import { Link } from 'react-router-dom';
-import convert from '../common/convert';
+import convert from '../../functions/convert';
 const VideoPlayer = lazy(() => import('../common/VideoPlayer'));
 
 function ChannelPlayer() {

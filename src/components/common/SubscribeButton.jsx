@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import convert from '../common/convert';
+import convert from '../../functions/convert';
 
 function SubscribeButton({ subsNumber }) {
   const [subbed, setSubbed] = useState(false);

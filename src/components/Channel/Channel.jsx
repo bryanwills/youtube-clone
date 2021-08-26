@@ -4,7 +4,7 @@ import ChannelHeader from './ChannelHeader';
 import ChannelBody from './ChannelBody';
 import Carousel from '../Carousel/Carousel';
 import banner from '../../assets/images/banner.png';
-import avatars from '../common/avatars';
+import avatars from '../../store/avatars';
 
 function Channel() {
   const { videos } = useContext(VideosContext);

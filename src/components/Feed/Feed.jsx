@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { VideosContext } from '../../context/VideosContext';
 import Carousel from '../Carousel/Carousel';
-import avatars from '../common/avatars';
+import avatars from '../../store/avatars';
 
 function Feed() {
   const { videos } = useContext(VideosContext);

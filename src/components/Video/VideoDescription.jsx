@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import SubscribeButton from '../common/SubscribeButton';
-import avatars from '../common/avatars';
+import avatars from '../../store/avatars';
 
 function VideoDescription() {
   const video_data = {

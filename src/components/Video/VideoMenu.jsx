@@ -1,5 +1,5 @@
 import VideoMenuButton from './VideoMenuButton';
-import icons from '../common/icons';
+import icons from '../../store/icons';
 
 function VideoMenu({ likes, dislikes }) {
   const MoreIcon = icons.More;

@@ -1,6 +1,6 @@
 import IconButton from '../common/IconButton';
 import NotificationsButton from './NotificationsButton';
-import icons from '../common/icons';
+import icons from '../../store/icons';
 
 function Misc() {
   return (

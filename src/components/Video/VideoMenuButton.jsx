@@ -1,4 +1,4 @@
-import convert from '../common/convert';
+import convert from '../../functions/convert';
 
 function VideoMenuButton({ icon, statsNum, text }) {
   const Icon = icon;

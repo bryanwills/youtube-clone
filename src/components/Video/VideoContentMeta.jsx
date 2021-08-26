@@ -1,5 +1,5 @@
 import VideoMenu from './VideoMenu';
-import convert from '../common/convert';
+import convert from '../../functions/convert';
 
 function VideoContentMeta() {
   const video_data = {

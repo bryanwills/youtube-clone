@@ -28,7 +28,7 @@ format:fix   - Fix the style of JS, JSX, HTML and SCSS code.
 },
 ```
 
-> **NOTE**: All logos and content belong to their original authors.
+> **NOTE**: All logos and content belongs to their original authors.
 
 ## License
 

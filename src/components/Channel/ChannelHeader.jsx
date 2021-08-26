@@ -1,6 +1,6 @@
 import ChannelMeta from './ChannelMeta';
 import SubscribeButton from '../common/SubscribeButton';
-import icons from '../common/icons';
+import icons from '../../store/icons';
 import ProfileIcon from '../../assets/icons/profile.svg';
 
 function ChannelHeader({ props }) {
