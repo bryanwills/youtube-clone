@@ -25,7 +25,8 @@ function App() {
   useEffect(() => {
     fetch(fetch_data.url)
       .then((response) => response.json())
-      .then((data) => setVideos(data.splice(1, fetch_data.limit)));
+      .then((data) => setVideos(data.splice(1, fetch_data.limit)))
+      .catch((error) => console.error('Error fetching data: ', error));
   }, [fetch_data.limit, fetch_data.url]);
 
   return (

@@ -8,6 +8,7 @@ import avatars from '../common/avatars';
 
 function Channel() {
   const { videos } = useContext(VideosContext);
+
   const channel_data = {
     banner: banner,
     banner_alt: 'Mountain',
@@ -16,16 +17,18 @@ function Channel() {
     subs_num: 2298343,
   };
 
+  const carousel_props = {
+    isChannel: false,
+    channelName: `${channel_data.name}'s videos`,
+    videos: videos,
+  };
+
   return (
     <section className="channel">
       <div className="channel-container">
         <ChannelHeader props={channel_data} />
         <ChannelBody />
-        <Carousel
-          isChannel={false}
-          channelName="Dollie Blair's videos"
-          videos={videos}
-        />
+        <Carousel props={carousel_props} />
       </div>
     </section>
   );

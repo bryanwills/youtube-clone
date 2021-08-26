@@ -6,11 +6,15 @@ function Misc() {
   return (
     <section className="misc">
       <div className="misc-icons">
-        <IconButton icon={icons.Stream} />
-        <IconButton icon={icons.Apps} />
+        <IconButton icon={icons.Stream} ariaLabel="launch stream" />
+        <IconButton icon={icons.Apps} ariaLabel="show apps" />
         <NotificationsButton quantity="3" />
       </div>
-      <IconButton btnClass="icon-btn--profile" icon={icons.Profile} />
+      <IconButton
+        btnClass="icon-btn--profile"
+        icon={icons.Profile}
+        ariaLabel="account menu"
+      />
     </section>
   );
 }

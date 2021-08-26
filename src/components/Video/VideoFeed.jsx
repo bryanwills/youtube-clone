@@ -5,6 +5,14 @@ import Carousel from '../Carousel/Carousel';
 
 function VideoFeed() {
   const { videos } = useContext(VideosContext);
+  const carousel_props = {
+    className: 'carousel--vertical',
+    isChannel: false,
+    needArrows: false,
+    videos: videos,
+    videoWidth: 376,
+    videoHeight: 213,
+  };
 
   return (
     <section className="video-feed">
@@ -13,14 +21,7 @@ function VideoFeed() {
         <ToggleSwitch text="Autoplay" />
       </header>
 
-      <Carousel
-        className="carousel--vertical"
-        isChannel={false}
-        needArrows={false}
-        videos={videos}
-        videoWidth={367}
-        videoHeight={213}
-      />
+      <Carousel props={carousel_props} />
     </section>
   );
 }
