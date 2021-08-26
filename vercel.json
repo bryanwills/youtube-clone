@@ -1,4 +1,19 @@
 {
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Accept-Encoding",
+          "value": "br"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "max-age=864000"
+        }
+      ]
+    }
+  ],
   "redirects": [
     { "source": "/author", "destination": "https://github.com/thelissimus" },
     { "source": "/view-source", "destination": "https://github.com/thelissimus/youtube-clone" }
