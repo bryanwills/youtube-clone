@@ -55,7 +55,7 @@ function Carousel({
               <CarouselVideo
                 key={vid.id}
                 title={vid.title}
-                image={vid.thumbnailUrl}
+                image={vid.url}
                 alt={vid.title}
                 imgWidth={videoWidth}
                 imgHeight={videoHeight}

@@ -1,5 +1,3 @@
-![YouTube Logo](./src/assets/images/logo-raw.png)
-
 # YouTube Clone
 
 **NPM Commands**

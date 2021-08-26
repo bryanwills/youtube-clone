@@ -1,5 +1,7 @@
-import VideoPlayer from '../common/VideoPlayer';
+import { lazy } from 'react';
 import VideoContentMeta from './VideoContentMeta';
+import VideoDescription from './VideoDescription';
+const VideoPlayer = lazy(() => import('../common/VideoPlayer'));
 
 function VideoContent() {
   return (
@@ -8,6 +10,7 @@ function VideoContent() {
         <VideoPlayer className="video-player--big" width={1280} height={720} />
         <VideoContentMeta />
       </header>
+      <VideoDescription />
     </section>
   );
 }

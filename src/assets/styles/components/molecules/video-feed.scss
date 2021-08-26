@@ -2,6 +2,9 @@
   max-width: 370px;
 
   &-header {
+    @include flex-justify-between;
+    align-items: flex-end;
+
     &__title {
       font-size: 36px;
     }
