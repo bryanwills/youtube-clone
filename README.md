@@ -1,11 +1,11 @@
-# YouTube Clone
+# YouTube ~~Clone~~ Redesign
 
-**NPM Commands**
+## NPM Commands
 
-```shell
+```txt
 $ npm run <options>
 
-OPTIONS:
+Options:
 
 start        - Starts the development server.
 build        - Builds the app for production.
@@ -13,7 +13,7 @@ format:check - Checks the style of JS, JSX, HTML and SCSS code.
 format:fix   - Fix the style of JS, JSX, HTML and SCSS code.
 ```
 
-**Dependencies**
+## Dependencies
 
 ```json
 "dependencies": {
@@ -28,7 +28,13 @@ format:fix   - Fix the style of JS, JSX, HTML and SCSS code.
 },
 ```
 
-> **NOTE**: All logos and content belongs to their original authors.
+## Credits
+
+**All logos and content belong to their original authors.**
+
+Logos: [**YouTube**](https://www.youtube.com)
+
+Channel Logo & Single video: [**Fireship**](https://www.youtube.com/c/Fireship) & [**React in 100 Seconds**](https://youtu.be/Tn6-PIqc4UM)
 
 ## License
 

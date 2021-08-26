@@ -11,7 +11,7 @@ function ChannelHeader({ props }) {
       <img
         className="channel-header__banner"
         src={props.banner}
-        alt={props.banner_alt}
+        alt={`${props.name}'s banner`}
       />
 
       <section className="channel-header-meta">
@@ -19,7 +19,7 @@ function ChannelHeader({ props }) {
           <ChannelMeta
             image={props.image || ProfileIcon}
             name={props.name}
-            subsNumber={props.subs_num}
+            subsNumber={props.subscribers_num}
           />
         </div>
 
@@ -30,7 +30,7 @@ function ChannelHeader({ props }) {
             aria-label="setup channel notifications">
             <BellIcon className="channel-header-meta-items__bell__icon" />
           </button>
-          <SubscribeButton subsNumber={props.subs_num} />
+          <SubscribeButton subsNumber={props.subscribers_num} />
         </div>
       </section>
     </header>
@@ -39,11 +39,10 @@ function ChannelHeader({ props }) {
 
 ChannelHeader.defaultProps = {
   props: {
-    banner: '',
-    banner_alt: '',
-    image: '',
     name: '',
-    subs_num: 0,
+    image: '',
+    banner: '',
+    subscribers_num: 0,
   },
 };
 

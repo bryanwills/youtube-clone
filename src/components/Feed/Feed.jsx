@@ -1,25 +1,26 @@
 import { useContext } from 'react';
 import { VideosContext } from '../../context/VideosContext';
 import Carousel from '../Carousel/Carousel';
+import channel from '../../store/channel';
 import avatars from '../../store/avatars';
 
 function Feed() {
   const { videos } = useContext(VideosContext);
   const carousel_props = {
     channel: {
-      channelImage: avatars.a1,
-      channelName: 'Dollie Blair',
+      channelImage: channel.image,
+      title: channel.name,
       videos: videos,
     },
-    channel_recommended: {
-      channelImage: avatars.a7,
-      channelName: 'Food & Drink',
+    recommended_channel: {
+      channelImage: avatars.a6,
+      title: 'Food & Drink',
       isRecommended: true,
       subsNumber: 2298343,
       videos: videos,
     },
-    recommended: {
-      channelName: 'Recommended',
+    recommended_videos: {
+      title: 'Recommended',
       isChannel: false,
       videos: videos,
       videoWidth: 540,
@@ -30,8 +31,8 @@ function Feed() {
   return (
     <section className="feed">
       <Carousel props={carousel_props.channel} />
-      <Carousel props={carousel_props.recommended} />
-      <Carousel props={carousel_props.channel_recommended} />
+      <Carousel props={carousel_props.recommended_videos} />
+      <Carousel props={carousel_props.recommended_channel} />
     </section>
   );
 }

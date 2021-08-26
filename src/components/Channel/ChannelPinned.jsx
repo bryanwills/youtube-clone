@@ -6,9 +6,9 @@ function ChannelPinned() {
     <section className="channel-pinned">
       <h4 className="channel-pinned__title">Recommended channels</h4>
       <ul className="channel-pinned-list">
-        <ChannelPinnedItem image={avatars.a2} name="Flora Benson" />
-        <ChannelPinnedItem image={avatars.a3} name="Violet Cobb" />
-        <ChannelPinnedItem image={avatars.a4} name="Phillip Mullins" />
+        <ChannelPinnedItem image={avatars.a1} name="Flora Benson" />
+        <ChannelPinnedItem image={avatars.a2} name="Violet Cobb" />
+        <ChannelPinnedItem image={avatars.a3} name="Phillip Mullins" />
       </ul>
     </section>
   );

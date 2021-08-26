@@ -9,7 +9,7 @@ function Carousel({ props }) {
         isRecommended={props.isRecommended}
         needArrows={props.needArrows}
         channelImage={props.channelImage}
-        channelName={props.channelName}
+        title={props.title}
         subsNumber={props.subsNumber}
       />
 

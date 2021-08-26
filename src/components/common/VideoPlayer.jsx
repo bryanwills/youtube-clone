@@ -14,9 +14,9 @@ function VideoPlayer({ className, width, height, link }) {
 
 VideoPlayer.defaultProps = {
   className: '',
-  width: 424,
-  height: 238,
-  link: 'https://www.youtube-nocookie.com/embed/Tn6-PIqc4UM',
+  width: 560,
+  height: 315,
+  link: '',
 };
 
 export default VideoPlayer;

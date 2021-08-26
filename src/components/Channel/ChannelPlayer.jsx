@@ -1,38 +1,39 @@
 import { lazy } from 'react';
 import { Link } from 'react-router-dom';
+import channel from '../../store/channel';
 import convert from '../../functions/convert';
 const VideoPlayer = lazy(() => import('../common/VideoPlayer'));
 
 function ChannelPlayer() {
-  const player_data = {
-    title: 'React in 100 Seconds',
-    description:
-      'React is a little JavaScript library with a big influence over the webdev world. Learn the basics of React in 100 Seconds.',
-    views: 440245,
-    date: '6 months ago',
-  };
+  const channelVideoPrimary = channel.videos.primary;
 
   return (
     <section className="channel-player">
-      <VideoPlayer className="video-player--channel" />
+      <VideoPlayer
+        className="video-player--channel"
+        width={424}
+        height={238}
+        link={channelVideoPrimary.link}
+      />
 
       <div className="channel-player-text">
         <div>
           <h2 className="channel-player-text__title">
             <Link className="channel-player-text__title__link" to="/video/2">
-              {player_data.title}
+              {channelVideoPrimary.title}
             </Link>
           </h2>
           <p className="channel-player-text__description">
-            {player_data.description}
+            {channelVideoPrimary.description}
           </p>
         </div>
 
         <div>
           <span className="channel-player-text__meta">
-            {convert(player_data.views)}
+            {convert(channelVideoPrimary.views)}
           </span>
-          <span className="channel-player-text__meta">{player_data.date}</span>
+          {/* TODO: Automate date calculation */}
+          <span className="channel-player-text__meta">6 months ago</span>
         </div>
       </div>
     </section>

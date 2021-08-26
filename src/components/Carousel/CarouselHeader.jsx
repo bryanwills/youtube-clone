@@ -7,7 +7,7 @@ function CarouselHeader({
   isRecommended,
   needArrows,
   channelImage,
-  channelName,
+  title,
   subsNumber,
 }) {
   return (
@@ -16,10 +16,10 @@ function CarouselHeader({
         {isChannel ? (
           <Link className="carousel-header-items-link" to="/channel">
             <img className="carousel-header__image" src={channelImage} alt="" />
-            <h2 className="carousel-header__name">{channelName}</h2>
+            <h2 className="carousel-header__name">{title}</h2>
           </Link>
         ) : (
-          <h2 className="carousel-header__name">{channelName}</h2>
+          <h2 className="carousel-header__name">{title}</h2>
         )}
 
         {isRecommended && (
@@ -42,7 +42,7 @@ CarouselHeader.defaultProps = {
   isRecommended: false,
   needArrows: true,
   channelImage: '',
-  channelName: '',
+  title: '',
   subsNumber: 0,
 };
 
