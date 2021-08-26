@@ -9,7 +9,7 @@
         },
         {
           "key": "Cache-Control",
-          "value": "max-age=864000"
+          "value": "public, max-age=864000"
         }
       ]
     }

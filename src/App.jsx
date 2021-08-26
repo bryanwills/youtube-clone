@@ -11,23 +11,17 @@ const Video = lazy(() => import('./components/Video/Video'));
 function App() {
   const { pathname } = useLocation();
   const [videos, setVideos] = useState([]);
-  const fetch_data = {
-    url: 'https://jsonplaceholder.typicode.com/photos?albumId=1',
-    limit: 10,
-  };
 
   useEffect(() => {
     const headerHeight = document.querySelector('.header').offsetHeight;
     const contentEl = document.querySelector('.content');
     contentEl.style.maxHeight = `calc(100vh - ${headerHeight}px)`;
-  }, []);
 
-  useEffect(() => {
-    fetch(fetch_data.url)
+    fetch('https://jsonplaceholder.typicode.com/photos?albumId=1')
       .then((response) => response.json())
-      .then((data) => setVideos(data.splice(1, fetch_data.limit)))
+      .then((data) => setVideos(data.splice(1, 10)))
       .catch((error) => console.error('Error fetching data: ', error));
-  }, [fetch_data.limit, fetch_data.url]);
+  }, []);
 
   return (
     <>
@@ -38,7 +32,7 @@ function App() {
 
         <VideosContext.Provider value={{ videos, setVideos }}>
           <Switch>
-            <Suspense fallback={<div />}>
+            <Suspense fallback={null}>
               <Route exact path="/" component={Feed} />
               <Route path="/channel" component={Channel} />
               <Route path="/video/2" component={Video} />

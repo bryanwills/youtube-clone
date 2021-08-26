@@ -11,7 +11,7 @@ function Channel() {
 
   const channel_data = {
     banner: banner,
-    banner_alt: 'Mountain',
+    banner_alt: 'React Logo',
     image: avatars.a1,
     name: 'Dollie Blair',
     subs_num: 2298343,
