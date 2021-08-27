@@ -1,4 +1,4 @@
-# YouTube ~~Clone~~ Redesign
+# YouTube Clone/Redesign
 
 ## NPM Commands
 

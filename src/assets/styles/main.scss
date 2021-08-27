@@ -1,6 +1,7 @@
 // Abstract
 @import './abstract/variables';
 @import './abstract/mixins';
+@import './abstract/animations';
 // Base
 @import './base/typography';
 @import './base/normalize.scss';
@@ -25,6 +26,7 @@
 @import './components/molecules/channel-nav.scss';
 @import './components/molecules/channel-pinned.scss';
 @import './components/molecules/channel-player.scss';
+@import './components/molecules/loader.scss';
 @import './components/molecules/misc.scss';
 @import './components/molecules/subs.scss';
 @import './components/molecules/video-content.scss';

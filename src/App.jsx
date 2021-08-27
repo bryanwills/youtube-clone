@@ -4,6 +4,7 @@ import { VideosContext } from './context/VideosContext';
 import './assets/styles/main.scss';
 import Header from './components/Header/Header';
 import Sidebar from './components/Sidebar/Sidebar';
+import Loader from './components/Loader/Loader';
 const Feed = lazy(() => import('./components/Feed/Feed'));
 const Channel = lazy(() => import('./components/Channel/Channel'));
 const Video = lazy(() => import('./components/Video/Video'));
@@ -32,7 +33,7 @@ function App() {
 
         <VideosContext.Provider value={{ videos, setVideos }}>
           <Switch>
-            <Suspense fallback={null}>
+            <Suspense fallback={<Loader />}>
               <Route exact path="/" component={Feed} />
               <Route path="/channel" component={Channel} />
               <Route path="/video/2" component={Video} />
