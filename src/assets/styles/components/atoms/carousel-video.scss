@@ -3,6 +3,7 @@
     &__img {
       border-radius: $radius-sm;
       margin-bottom: 10px;
+      object-fit: cover;
     }
 
     &__title {
