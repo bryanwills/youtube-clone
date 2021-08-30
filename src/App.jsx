@@ -1,4 +1,4 @@
-import { lazy, Suspense, useEffect, useState } from 'react';
+import { lazy, Suspense, useEffect, useLayoutEffect, useState } from 'react';
 import { Route, Switch, useLocation } from 'react-router-dom';
 import { VideosContext } from './context/VideosContext';
 import './assets/styles/main.scss';
@@ -13,11 +13,15 @@ function App() {
   const { pathname } = useLocation();
   const [videos, setVideos] = useState([]);
 
-  useEffect(() => {
-    const headerHeight = document.querySelector('.header').offsetHeight;
+  useLayoutEffect(() => {
+    const headerHeight = document
+      .querySelector('.header')
+      .getBoundingClientRect().height;
     const contentEl = document.querySelector('.content');
     contentEl.style.maxHeight = `calc(100vh - ${headerHeight}px)`;
+  }, []);
 
+  useEffect(() => {
     fetch('https://jsonplaceholder.typicode.com/photos?albumId=1')
       .then((response) => response.json())
       .then((data) => setVideos(data.splice(1, 10)))

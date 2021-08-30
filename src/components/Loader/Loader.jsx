@@ -1,7 +1,7 @@
 function Loader() {
   return (
     <section className="loader">
-      <div class="loader-shape">
+      <div className="loader-shape">
         <div></div>
         <div></div>
         <div></div>
