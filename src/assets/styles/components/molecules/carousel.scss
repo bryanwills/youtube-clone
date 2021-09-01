@@ -1,4 +1,6 @@
 .carousel {
+  min-height: 276px;
+
   &-header {
     @include flex-center-between;
     max-width: 78vw;
@@ -34,6 +36,7 @@
     &-list {
       display: flex;
       gap: 40px;
+      min-height: 218px;
 
       & > * {
         width: 100%;
@@ -46,6 +49,10 @@
   }
 
   // Modifications
+  &--large {
+    min-height: 340px;
+  }
+
   &--vertical {
     .carousel-videos-list {
       flex-direction: column;

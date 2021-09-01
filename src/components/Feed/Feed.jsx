@@ -25,6 +25,7 @@ function Feed() {
       videos: videos,
       videoWidth: 540,
       videoHeight: 250,
+      className: 'carousel--large',
     },
   };
 

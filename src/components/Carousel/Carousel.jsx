@@ -3,7 +3,7 @@ import CarouselBody from './CarouselBody';
 
 function Carousel({ props }) {
   return (
-    <section className={`carousel ${props.className}`}>
+    <section className={`carousel ${props.className ?? ''}`}>
       <CarouselHeader
         isChannel={props.isChannel}
         isRecommended={props.isRecommended}
@@ -21,11 +21,5 @@ function Carousel({ props }) {
     </section>
   );
 }
-
-Carousel.defaultProps = {
-  props: {
-    className: '',
-  },
-};
 
 export default Carousel;
