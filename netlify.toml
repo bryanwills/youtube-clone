@@ -3,7 +3,7 @@
   [headers.values]
   cache-control = '''
   public,
-  max-age=86400'''
+  max-age=864000'''
 
 [[redirects]]
   from = "/author"
