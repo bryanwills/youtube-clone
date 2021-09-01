@@ -1,4 +1,11 @@
-import { lazy, Suspense, useEffect, useLayoutEffect, useState } from 'react';
+import {
+  lazy,
+  Suspense,
+  useEffect,
+  useLayoutEffect,
+  useRef,
+  useState,
+} from 'react';
 import { Route, Switch, useLocation } from 'react-router-dom';
 import { VideosContext } from './context/VideosContext';
 import './assets/styles/main.scss';
@@ -10,6 +17,7 @@ const Channel = lazy(() => import('./components/Channel/Channel'));
 const Video = lazy(() => import('./components/Video/Video'));
 
 function App() {
+  const contentRef = useRef();
   const { pathname } = useLocation();
   const [videos, setVideos] = useState([]);
 
@@ -17,8 +25,7 @@ function App() {
     const headerHeight = document
       .querySelector('.header')
       .getBoundingClientRect().height;
-    const contentEl = document.querySelector('.content');
-    contentEl.style.maxHeight = `calc(100vh - ${headerHeight}px)`;
+    contentRef.current.style.maxHeight = `calc(100vh - ${headerHeight}px)`;
   }, []);
 
   useEffect(() => {
@@ -32,7 +39,7 @@ function App() {
     <>
       <Header />
 
-      <section className="content">
+      <section ref={contentRef} className="content">
         {pathname !== '/video/2' && <Sidebar />}
 
         <VideosContext.Provider value={{ videos, setVideos }}>

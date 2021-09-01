@@ -1,11 +1,11 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 function ToggleSwitch({ text }) {
+  const checkboxRef = useRef();
   const [checked, setChecked] = useState(true);
 
   useEffect(() => {
-    const checkbox = document.querySelector('.toggle-switch__label__checkbox');
-    checkbox.checked = checked;
+    checkboxRef.current.checked = checked;
   }, [checked]);
 
   const handleChange = () => {
@@ -20,6 +20,7 @@ function ToggleSwitch({ text }) {
         htmlFor="toggle-switch-input"
         onChange={handleChange}>
         <input
+          ref={checkboxRef}
           className="toggle-switch__label__checkbox"
           name="toggle-switch"
           type="checkbox"
