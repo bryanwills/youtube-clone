@@ -1,26 +1,26 @@
 .channel-nav {
-  @include flex-align-center;
-  margin-bottom: 50px;
-
-  &-list {
     @include flex-align-center;
-    margin-right: 70px;
+    margin-bottom: 50px;
 
-    & li:not(:last-child) {
-      margin-right: 70px;
-    }
-  }
+    &-list {
+        @include flex-align-center;
+        margin-right: 70px;
 
-  &__btn {
-    @include flex-center;
-    @include def-transition;
-
-    &:active {
-      opacity: 0.4;
+        & li:not(:last-child) {
+            margin-right: 70px;
+        }
     }
 
-    &__icon {
-      color: $clr-light;
+    &__btn {
+        @include flex-center;
+        @include def-transition;
+
+        &:active {
+            opacity: 0.4;
+        }
+
+        &__icon {
+            color: $clr-light;
+        }
     }
-  }
 }

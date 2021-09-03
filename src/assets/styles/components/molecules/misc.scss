@@ -1,21 +1,21 @@
 .misc {
-  @include flex-align-center;
-  margin-left: auto;
-
-  &-icons {
     @include flex-align-center;
-    margin-right: 40px;
+    margin-left: auto;
 
-    button {
-      @include def-transition;
+    &-icons {
+        @include flex-align-center;
+        margin-right: 40px;
 
-      &:active {
-        opacity: 0.4;
-      }
+        button {
+            @include def-transition;
 
-      &:not(:last-child) {
-        margin-right: 50px;
-      }
+            &:active {
+                opacity: 0.4;
+            }
+
+            &:not(:last-child) {
+                margin-right: 50px;
+            }
+        }
     }
-  }
 }

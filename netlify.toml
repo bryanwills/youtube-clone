@@ -1,14 +1,14 @@
 [[headers]]
-  for = "/*"
-  [headers.values]
-  cache-control = '''
-  public,
-  max-age=864000'''
+    for = "/*"
+    [headers.values]
+    cache-control = '''
+    public,
+    max-age=864000'''
 
 [[redirects]]
-  from = "/author"
-  to = "https://github.com/thelissimus"
+    from = "/author"
+    to = "https://github.com/thelissimus"
 
 [[redirects]]
-  from = "/view-source"
-  to = "https://github.com/thelissimus/youtube-clone"
+    from = "/view-source"
+    to = "https://github.com/thelissimus/youtube-clone"

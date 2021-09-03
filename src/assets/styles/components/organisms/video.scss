@@ -1,13 +1,13 @@
 .video {
-  overflow-x: hidden;
-  overflow-y: scroll;
-  width: 100%;
-  padding: 10px 0 60px 10px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 100%;
+    padding: 10px 0 60px 10px;
 
-  &-container {
-    @include flex-justify-between;
-    max-width: 1800px;
-    padding: 0 20px;
-    margin: 0 auto;
-  }
+    &-container {
+        @include flex-justify-between;
+        max-width: 1800px;
+        padding: 0 20px;
+        margin: 0 auto;
+    }
 }

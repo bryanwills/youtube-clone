@@ -17,14 +17,14 @@ format:fix   - Fix the style of JS, JSX, HTML and SCSS code.
 
 ```json
 "dependencies": {
-  "react": "^17.0.2",
-  "react-dom": "^17.0.2",
-  "react-router-dom": "^5.2.0",
-  "react-scripts": "4.0.3",
-  "sass": "^1.37.0"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "sass": "^1.37.0"
 },
 "devDependencies": {
-  "prettier": "^2.3.2"
+    "prettier": "^2.3.2"
 },
 ```
 

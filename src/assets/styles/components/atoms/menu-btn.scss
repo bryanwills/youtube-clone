@@ -1,21 +1,21 @@
 .menu-btn {
-  @include flex-center;
-  @include def-transition;
-  border: none;
-  background-color: transparent;
-  color: $clr-light;
+    @include flex-center;
+    @include def-transition;
+    border: none;
+    background-color: transparent;
+    color: $clr-light;
 
-  &:active {
-    opacity: 0.4;
-  }
+    &:active {
+        opacity: 0.4;
+    }
 
-  &__icon {
-    width: 20px;
-    height: 17px;
-  }
+    &__icon {
+        width: 20px;
+        height: 17px;
+    }
 
-  // Modifications
-  &--header {
-    margin-right: 28px;
-  }
+    // Modifications
+    &--header {
+        margin-right: 28px;
+    }
 }

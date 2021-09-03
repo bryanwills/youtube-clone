@@ -1,32 +1,32 @@
 .subs {
-  margin-bottom: 100px;
+    margin-bottom: 100px;
 
-  &__title {
-    margin-bottom: 30px;
-    font-size: 18px;
-  }
-
-  &-list {
-    &-item {
-      &:not(:last-child) {
-        margin-bottom: 24px;
-      }
-
-      &__link {
-        @include flex-align-center;
-
-        &__img {
-          display: inline-block;
-          width: 26px;
-          height: 26px;
-          border-radius: 50%;
-        }
-
-        &__text {
-          margin-left: 10px;
-          color: $clr-gray-text;
-        }
-      }
+    &__title {
+        margin-bottom: 30px;
+        font-size: 18px;
     }
-  }
+
+    &-list {
+        &-item {
+            &:not(:last-child) {
+                margin-bottom: 24px;
+            }
+
+            &__link {
+                @include flex-align-center;
+
+                &__img {
+                    display: inline-block;
+                    width: 26px;
+                    height: 26px;
+                    border-radius: 50%;
+                }
+
+                &__text {
+                    margin-left: 10px;
+                    color: $clr-gray-text;
+                }
+            }
+        }
+    }
 }

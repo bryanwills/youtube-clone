@@ -1,14 +1,14 @@
 .video-feed {
-  min-width: 380px;
-  max-width: 380px;
-  min-height: 1200px;
+    min-width: 380px;
+    max-width: 380px;
+    min-height: 1200px;
 
-  &-header {
-    @include flex-justify-between;
-    align-items: flex-end;
+    &-header {
+        @include flex-justify-between;
+        align-items: flex-end;
 
-    &__title {
-      font-size: 36px;
+        &__title {
+            font-size: 36px;
+        }
     }
-  }
 }

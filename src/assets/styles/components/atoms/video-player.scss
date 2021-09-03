@@ -1,17 +1,17 @@
 .video-player {
-  border: none;
-  border-radius: $radius-sm;
+    border: none;
+    border-radius: $radius-sm;
 
-  // Modifications
-  &--channel {
-    margin-right: 32px;
-  }
+    // Modifications
+    &--channel {
+        margin-right: 32px;
+    }
 
-  &--big {
-    min-width: 600px;
-    min-height: 337.5px;
-    width: 100%;
-    height: auto;
-    aspect-ratio: 16 / 9;
-  }
+    &--big {
+        min-width: 600px;
+        min-height: 337.5px;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
 }

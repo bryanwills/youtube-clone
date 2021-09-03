@@ -1,25 +1,25 @@
 .search-label {
-  width: 100%;
-  max-width: 830px;
-
-  &__input {
     width: 100%;
-    padding: 12px 50px 12px 23px;
-    border: none;
-    border-radius: $radius-md;
-    background: url('../../../icons/search.svg'), $clr-dark-800;
-    background-repeat: no-repeat;
-    background-position: right 18px center, center;
-    color: $clr-light;
+    max-width: 830px;
 
-    &::placeholder {
-      color: $clr-light;
-      opacity: 0.4;
+    &__input {
+        width: 100%;
+        padding: 12px 50px 12px 23px;
+        border: none;
+        border-radius: $radius-md;
+        background: url("../../../icons/search.svg"), $clr-dark-800;
+        background-repeat: no-repeat;
+        background-position: right 18px center, center;
+        color: $clr-light;
+
+        &::placeholder {
+            color: $clr-light;
+            opacity: 0.4;
+        }
     }
-  }
 
-  // Modifications
-  &--header {
-    margin-right: 100px;
-  }
+    // Modifications
+    &--header {
+        margin-right: 100px;
+    }
 }

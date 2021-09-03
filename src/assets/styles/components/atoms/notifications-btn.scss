@@ -1,17 +1,17 @@
 .notifications-button {
-  position: relative;
+    position: relative;
 
-  &__quantity {
-    @include flex-center;
-    position: absolute;
-    top: -5px;
-    right: -5px;
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    font-size: 13px;
-    font-weight: bold;
-    background-color: $clr-primary;
-    color: $clr-light;
-  }
+    &__quantity {
+        @include flex-center;
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        font-size: 13px;
+        font-weight: bold;
+        background-color: $clr-primary;
+        color: $clr-light;
+    }
 }

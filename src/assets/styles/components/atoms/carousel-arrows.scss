@@ -1,38 +1,38 @@
 .carousel-arrows {
-  @include flex-align-center;
+    @include flex-align-center;
 
-  &__btn {
-    @include flex-center;
-    @include def-transition;
-    width: 28px;
-    height: 28px;
-    background-color: $clr-dark-700;
-    border-radius: 50%;
+    &__btn {
+        @include flex-center;
+        @include def-transition;
+        width: 28px;
+        height: 28px;
+        background-color: $clr-dark-700;
+        border-radius: 50%;
 
-    &:not(:last-child) {
-      margin-right: 10px;
-    }
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
 
-    &:active {
-      opacity: 0.4;
-    }
+        &:active {
+            opacity: 0.4;
+        }
 
-    &__icon {
-      color: $clr-gray-400;
+        &__icon {
+            color: $clr-gray-400;
+        }
+
+        // Modifications
+        &--left {
+            padding-right: 3px;
+        }
+
+        &--right {
+            padding-left: 3px;
+        }
     }
 
     // Modifications
-    &--left {
-      padding-right: 3px;
+    &--feed {
+        margin-left: 40px;
     }
-
-    &--right {
-      padding-left: 3px;
-    }
-  }
-
-  // Modifications
-  &--feed {
-    margin-left: 40px;
-  }
 }
